@@ -1,0 +1,25 @@
+$color-black: #000000;
+$color-white: #ffffff;
+$border-color: #b6b6b6;
+
+/** Also possible to implement mobile-first with min-width */
+@mixin desktop {
+  @media only screen and (max-width: 1500px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media only screen and (max-width: 1024px) {
+    @content;
+  }
+}
+@mixin mobile-wide {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media only screen and (max-width: 480px) {
+    @content;
+  }
+}
